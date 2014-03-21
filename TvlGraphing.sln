@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tvl.Graphing", "Tvl.Graphing\Tvl.Graphing.csproj", "{4B335436-B2E9-47EB-9984-BFD037417A43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tvl.Sample.Graphing", "Tvl.Sample.Graphing\Tvl.Sample.Graphing.csproj", "{C3E4AEB2-04CA-49BC-9D6E-9AEB19CEF152}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B335436-B2E9-47EB-9984-BFD037417A43}.Debug|x86.ActiveCfg = Debug|x86
+		{4B335436-B2E9-47EB-9984-BFD037417A43}.Debug|x86.Build.0 = Debug|x86
+		{4B335436-B2E9-47EB-9984-BFD037417A43}.Release|x86.ActiveCfg = Release|x86
+		{4B335436-B2E9-47EB-9984-BFD037417A43}.Release|x86.Build.0 = Release|x86
+		{C3E4AEB2-04CA-49BC-9D6E-9AEB19CEF152}.Debug|x86.ActiveCfg = Debug|x86
+		{C3E4AEB2-04CA-49BC-9D6E-9AEB19CEF152}.Debug|x86.Build.0 = Debug|x86
+		{C3E4AEB2-04CA-49BC-9D6E-9AEB19CEF152}.Release|x86.ActiveCfg = Release|x86
+		{C3E4AEB2-04CA-49BC-9D6E-9AEB19CEF152}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

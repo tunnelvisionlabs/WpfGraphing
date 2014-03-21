@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B335436-B2E9-47EB-9984-BFD037417A43}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tvl.Graphing</RootNamespace>
+    <AssemblyName>Tvl.Graphing</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Tvl.Graphing.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Tvl.Graphing.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interop\EdgeHandle.cs" />
+    <Compile Include="Interop\GraphHandle.cs" />
+    <Compile Include="Interop\LayoutFeatures.cs" />
+    <Compile Include="Interop\NodeHandle.cs" />
+    <Compile Include="Interop\SafeContextHandle.cs" />
+    <Compile Include="DeviceEngine.cs" />
+    <Compile Include="Interop\adjmatrix_t.cs" />
+    <Compile Include="Interop\Agdata_t.cs" />
+    <Compile Include="Interop\Agdict_t.cs" />
+    <Compile Include="Interop\Agedgeinfo_t.cs" />
+    <Compile Include="Interop\Agedge_t.cs" />
+    <Compile Include="Interop\agerrlevel_t.cs" />
+    <Compile Include="Interop\Agnodeinfo_t.cs" />
+    <Compile Include="Interop\Agnode_t.cs" />
+    <Compile Include="Interop\Agproto_t.cs" />
+    <Compile Include="Interop\Agraphinfo_t.cs" />
+    <Compile Include="Interop\Agraph_t.cs" />
+    <Compile Include="Interop\Agsym_t.cs" />
+    <Compile Include="Interop\agusererrf.cs" />
+    <Compile Include="Interop\api_t.cs" />
+    <Compile Include="Interop\box.cs" />
+    <Compile Include="Interop\boxf.cs" />
+    <Compile Include="Interop\color_type_t.cs" />
+    <Compile Include="Interop\ComponentKind.cs" />
+    <Compile Include="Interop\DeviceFeatures.cs" />
+    <Compile Include="Interop\Dict_t.cs" />
+    <Compile Include="Interop\Dtlink_t.cs" />
+    <Compile Include="Interop\EdgeType.cs" />
+    <Compile Include="Interop\emit_state_t.cs" />
+    <Compile Include="Interop\ExternDll.cs" />
+    <Compile Include="Interop\fill_type.cs" />
+    <Compile Include="Interop\fontname_kind.cs" />
+    <Compile Include="Interop\GraphType.cs" />
+    <Compile Include="Interop\gvcolor_t.cs" />
+    <Compile Include="Interop\GVCOMMON_t.cs" />
+    <Compile Include="Interop\GVC_t.cs" />
+    <Compile Include="Interop\gvdevice_callbacks_t.cs" />
+    <Compile Include="Interop\gvdevice_engine_t.cs" />
+    <Compile Include="Interop\gvdevice_features_t.cs" />
+    <Compile Include="Interop\gvevent_key_binding_t.cs" />
+    <Compile Include="Interop\gvevent_key_callback_t.cs" />
+    <Compile Include="Interop\GVG_t.cs" />
+    <Compile Include="Interop\GVJ_t.cs" />
+    <Compile Include="Interop\gvlayout_engine_t.cs" />
+    <Compile Include="Interop\gvlayout_features_t.cs" />
+    <Compile Include="Interop\gvloadimage_engine_t.cs" />
+    <Compile Include="Interop\gvplugin_active_device_t.cs" />
+    <Compile Include="Interop\gvplugin_active_layout_t.cs" />
+    <Compile Include="Interop\gvplugin_active_loadimage_t.cs" />
+    <Compile Include="Interop\gvplugin_active_render_t.cs" />
+    <Compile Include="Interop\gvplugin_active_textlayout_t.cs" />
+    <Compile Include="Interop\gvplugin_api_t.cs" />
+    <Compile Include="Interop\gvplugin_available_t.cs" />
+    <Compile Include="Interop\gvplugin_installed_t.cs" />
+    <Compile Include="Interop\gvplugin_library_t.cs" />
+    <Compile Include="Interop\gvplugin_package_t.cs" />
+    <Compile Include="Interop\gvrender_features_t.cs" />
+    <Compile Include="Interop\gvrender_engine_t.cs" />
+    <Compile Include="Interop\gvtextlayout_engine_t.cs" />
+    <Compile Include="Interop\gv_argvlist_t.cs" />
+    <Compile Include="Interop\htmlfont_t.cs" />
+    <Compile Include="Interop\htmlimg_t.cs" />
+    <Compile Include="Interop\htmllabel_t.cs" />
+    <Compile Include="Interop\htmltbl_t.cs" />
+    <Compile Include="Interop\htmltxt_t.cs" />
+    <Compile Include="Interop\imagetype_t.cs" />
+    <Compile Include="Interop\label_type.cs" />
+    <Compile Include="Interop\layout_t.cs" />
+    <Compile Include="Interop\lt_symlist_t.cs" />
+    <Compile Include="Interop\map_shape_t.cs" />
+    <Compile Include="Interop\nlist_t.cs" />
+    <Compile Include="Interop\obj_state_t.cs" />
+    <Compile Include="Interop\obj_type.cs" />
+    <Compile Include="Interop\pen_type.cs" />
+    <Compile Include="Interop\point.cs" />
+    <Compile Include="Interop\pointf.cs" />
+    <Compile Include="Interop\PostscriptAlias.cs" />
+    <Compile Include="Interop\rank_t.cs" />
+    <Compile Include="Interop\Ratio.cs" />
+    <Compile Include="Interop\RenderFeatures.cs" />
+    <Compile Include="Interop\textlabel_t.cs" />
+    <Compile Include="Interop\textpara_t.cs" />
+    <Compile Include="Interop\UnsafeNativeMethods.cs" />
+    <Compile Include="Interop\usershape_t.cs" />
+    <Compile Include="Interop\JobHandle.cs" />
+    <Compile Include="Interop\ObjectStateHandle.cs" />
+    <Compile Include="PluginEngine.cs" />
+    <Compile Include="PluginLibrary.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RenderEngine.cs" />
+    <Compile Include="Interop\SafeMarshalHGlobalHandle.cs" />
+    <Compile Include="Interop\SymbolHandle.cs" />
+    <Compile Include="TextLayoutEngine.cs" />
+    <Compile Include="WpfRendering\WpfDeviceEngine.cs" />
+    <Compile Include="WpfRendering\WpfRenderEngine.cs" />
+    <Compile Include="WpfRendering\WpfTextLayoutEngine.cs" />
+    <Compile Include="WpfRendering\WpfLibrary.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="..\Reference\Graphviz\config6">
+      <Link>config6</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Reference\Graphviz\cdt.dll">
+      <Link>cdt.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\Graphviz\graph.dll">
+      <Link>graph.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\Graphviz\gvc.dll">
+      <Link>gvc.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\Graphviz\gvplugin_core.dll">
+      <Link>gvplugin_core.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\Graphviz\gvplugin_dot_layout.dll">
+      <Link>gvplugin_dot_layout.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\Graphviz\gvplugin_neato_layout.dll">
+      <Link>gvplugin_neato_layout.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\Graphviz\Pathplan.dll">
+      <Link>Pathplan.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\gtk\bin\libexpat.dll">
+      <Link>libexpat.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\gtk\bin\libltdl3.dll">
+      <Link>libltdl3.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Reference\gtk\bin\regex_win32.dll">
+      <Link>regex_win32.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
