@@ -1,0 +1,7 @@
+# Build output
+bin/
+obj/
+
+# Per-user files for Visual Studio
+*.suo
+*.user
